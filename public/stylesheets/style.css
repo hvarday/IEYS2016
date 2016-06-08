@@ -9,3 +9,13 @@ a {
 #copyright{
     margin-bottom: 0px;
 }
+#graphic{
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+}
+.modal p{
+    font-size: medium;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
