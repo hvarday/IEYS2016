@@ -6,16 +6,40 @@ body {
 a {
   color: #00B7FF;
 }
+
+.modal-graphic{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    margin-top: 5px;
+    z-index: 100;
+    padding: 10px;
+
+}
+.modal-content{
+    padding-top: 0;
+    margin-top: 170px;
+    position: relative;
+}
+
+
 #copyright{
     margin-bottom: 0px;
 }
-#graphic{
-    position: fixed;
-    margin-bottom: 0;
-    bottom: 0;
-}
+
 .modal p{
     font-size: medium;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
+
+}
+.card-content{
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
+}
+.features-text{
+    font-size: medium;
+    font-weight: 500;
 }
