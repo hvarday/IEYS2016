@@ -2,7 +2,13 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+.title{
+    color: black!important;
+}
+.icon-lg{
+    font-size: 55px!important;
+    color: #3F51B5;
+}
 a {
   color: #00B7FF;
 }
