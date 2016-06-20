@@ -35,4 +35,6 @@ $(document).ready(function(){
         $('.card-reveal').closest('.card').css('overflow', 'hidden');
 
     });
+    var w=$(document).height();
+    console.log(w);
 });

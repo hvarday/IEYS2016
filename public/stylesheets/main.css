@@ -16,13 +16,13 @@ a:focus{text-decoration:none;outline:none;color:#fff;}
 .content-wrap{-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s;-webkit-transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);}
 .show-menu .content-wrap{-webkit-transition-delay:0.1s;transition-delay:0.1s;-webkit-transform:translate3d(-250px, 0, 0);transform:translate3d(-250px, 0, 0);}
 .navbar-fixed-top{padding:15px 0;}
-.affix{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:fadeInDown;animation-name:fadeInDown;padding:0!important;background:#ff7256 !important;}
+.affix{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:fadeInDown;animation-name:fadeInDown;padding:0!important;background:rgba(251, 226, 136, 1) !important;}
 .sticky-navigation .row{padding:0;}
-.navbar.menu-wrap .navbar-header{margin:0 85px;float:none;background-color:#ff7256;}
-.navbar.menu-wrap{position:fixed;background-color:#ff7256;width:250px;top:0;right:0;min-height:100%;border-radius:0;margin:0;z-index:9999;height:100%;-webkit-transform:translate3d(250px, 0, 0);transform:translate3d(250px, 0, 0);-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s;-webkit-transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);}
-.navbar-nav{margin:0;float:none;background-color:#ff7256;}
+.navbar.menu-wrap .navbar-header{margin:0 85px;float:none;  background-color:rgba(251, 226, 136, 1);}
+.navbar.menu-wrap{position:fixed;background-color:rgba(251, 226, 136, 1);width:250px;top:0;right:0;min-height:100%;border-radius:0;margin:0;z-index:9999;height:100%;-webkit-transform:translate3d(250px, 0, 0);transform:translate3d(250px, 0, 0);-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s;-webkit-transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);}
+.navbar-nav{margin:0;float:none;background-color:rgba(251, 226, 136, 1);}
 .navbar .navbar-nav li{float:none;}
-.navbar .navbar-nav li a{font-family:'Roboto', sans-serif;background-color:#ff7256;display:block;font-size:14px;padding:15px 20px;text-transform:uppercase;font-weight:400;transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;}
+.navbar .navbar-nav li a{font-family:'Roboto', sans-serif;background-color:rgba(251, 226, 136, 1);display:block;font-size:14px;padding:15px 20px;font-weight:400;transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;}
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li .active a{background:rgba(255, 255, 255, 0.1);}
 .show-menu .navbar.menu-wrap{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-transition:-webkit-transform 0.8s;transition:transform 0.8s;-webkit-transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);}
@@ -44,7 +44,7 @@ a:focus{text-decoration:none;outline:none;color:#fff;}
 .menu-icon i:hover{color:#c6c6c6;}
 @media (max-width:768px){body.toggled{position:fixed;}
 }
-.hero-area{background:url(../img/hero-area.jpg) no-repeat;background-size:cover;background-position:center bottom;color:#fff;overflow:hidden;padding:90px 0;}
+.hero-area{background:url(../img/hero-area.jpg) no-repeat;background-size:cover;background-position:center bottom;color:#fff;overflow:hidden;}
 .hero-area .sticky-navigation{background:transparent;}
 .hero-area{color:black;}
 .hero-area .contents h1{font-size:30px;font-weight:100;}
@@ -56,7 +56,6 @@ a:focus{text-decoration:none;outline:none;color:#fff;}
 .slider-area .sticky-navigation{background:transparent;}
 .slider-area .btn{margin:15px;}
 .slider-area .large_white{color:#fff;}
-@media (min-width:1200px){.hero-area{padding:280px 0;}
 .hero-area h1{font-size:50px !important;}
 }
 #features{background:#fff;}
