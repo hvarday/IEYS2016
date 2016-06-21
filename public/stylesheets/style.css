@@ -101,11 +101,7 @@ a {
 }
 .background{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8836f+40,fbe288+60 */
-    background: #e8836f; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  rgba(251, 226, 136, 0.80) 50%, rgba(232, 131, 111, 0.80) 50%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(455deg, rgba(251, 226, 136, 0.80) 50%, rgba(232, 131, 111, 0.81) 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(251, 226, 136, 0.80) 50%, rgba(232, 131, 111, 0.80) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8836f', endColorstr='#fbe288',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .upper-half{
     position: absolute;
