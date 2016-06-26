@@ -35,6 +35,53 @@ $(document).ready(function(){
         $('.card-reveal').closest('.card').css('overflow', 'hidden');
 
     });
-    var w=$(document).height();
-    console.log(w);
+    var a='';
+    for(var i=0;i<teamleads.length;i++)
+    {
+        for(var j=1;j<teamleads[i].length;j++)
+        {
+            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">'+
+            '<div class="card z-depth-2">'+
+            '<div class="card-image">'+
+            '<img src="/images/loader.svg"/>'+
+            '</div>'+
+            '<div class="card-content">'+
+            '<h5 class="card-title">'+teamleads[i][j]+'</h5>'+
+            '</div>'+
+            '<div class="card-action">'+
+            '<p>'+teamleads[i][0]+'</p>'+
+            '</div>'+
+
+            '</div>'+
+            '</div>'
+        }
+
+    }
+    var e=document.getElementById('team-leads');
+    e.innerHTML=a;
+
+    a='';
+    for(var i=0;i<mentors.length;i++)
+    {
+        for(var j=1;j<mentors[i].length;j++)
+        {
+            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">'+
+            '<div class="card z-depth-2">'+
+            '<div class="card-image">'+
+            '<img src="/images/loader.svg"/>'+
+            '</div>'+
+            '<div class="card-content">'+
+            '<h5 class="card-title">'+mentors[i][j]+'</h5>'+
+            '</div>'+
+            '<div class="card-action">'+
+            '<p>'+mentors[i][0]+'</p>'+
+            '</div>'+
+
+            '</div>'+
+            '</div>'
+        }
+
+    }
+    e=document.getElementById('mentors-card');
+    e.innerHTML=a;
 });
