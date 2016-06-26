@@ -84,4 +84,14 @@ $(document).ready(function(){
     }
     e=document.getElementById('mentors-card');
     e.innerHTML=a;
+    var h=$(window).height();
+    console.log(h);
+    var b=document.getElementsByClassName('background');
+    console.log(b[0].children);
+    var c=b[0].children;
+    console.log(c[0]);
+    if(h>1080){
+        h=1080;
+    }
+    c[0].setAttribute('height',h);
 });

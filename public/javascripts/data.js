@@ -22,7 +22,7 @@ var mentors=[
     ["Design Team","Vishwanath Singh","Sreekar Reddy"],
     ["PR Team","Sonie Rai"],
     ["Purchase and Finance Team","Vamsi Krishna Thadichetty","Richard T V"],
-    ["Documentation Team","Shreyans Shukla","Anupama P. Joy"],
+    ["Documentation Team","Shreyansh Shukla","Anupama P. Joy"],
     ["Hospitality and Guestcare Team","Himanshu Grover","Shubham Gangwal"],
     ["Research Team","Arpita Kulkarni","Sreecharan Challa"],
     ["Miscellaneous Team","Ekta Pandey","Rahul Lella","Nayaab Singh","Anirudh Arunan"],
