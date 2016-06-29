@@ -40,7 +40,7 @@ $(document).ready(function(){
     {
         for(var j=1;j<teamleads[i].length;j++)
         {
-            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">'+
+            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">'+
             '<div class="card z-depth-2">'+
             '<div class="card-image">'+
             '<img src="/images/loader.svg"/>'+
@@ -65,7 +65,7 @@ $(document).ready(function(){
     {
         for(var j=1;j<mentors[i].length;j++)
         {
-            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">'+
+            a+='<div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">'+
             '<div class="card z-depth-2">'+
             '<div class="card-image">'+
             '<img src="/images/loader.svg"/>'+

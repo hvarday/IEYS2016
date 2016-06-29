@@ -190,6 +190,7 @@ section .section{
 #sponsors a{
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 #sponsors a:hover{
     color: black;
@@ -199,4 +200,29 @@ section .section{
 }
 #contact .row .center{
     margin-top: 5%;
+}
+.modal-content p{
+    text-align: justify;
+}
+#patrons img{
+    padding: 5px;
+    width: 85%;
+}
+#patrons .vice img{
+    padding: 5px;
+    width: 80%;
+    height: 100%;
+
+}
+#chairs .card{
+    width: 100%;
+}
+#chairs .card .card-content img{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#chairs p{
+    text-align: justify;
 }
