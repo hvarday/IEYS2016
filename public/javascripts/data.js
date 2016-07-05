@@ -4,7 +4,7 @@
 var teamleads=[
     ["Chair","Kanishk Sanghi"],
     ["Co-Chair","Mythili H","Shivanand K"],
-    ["Sponsorships Team","Amogh Sharma","Avinash Parkala"],
+    ["Sponsorship Team","Amogh Sharma","Avinash Parkala"],
     ["Research Team","Anna Shajee","Fazal Ahmad"],
     ["Logistics and Transportation Team","Anshit Saxena","Siddharth S Narayanan"],
     ["Photography and Video Team","Aseem Jain"],
@@ -20,7 +20,8 @@ var teamleads=[
 ];
 var mentors=[
     ["Chair","Harsh Shah"],
-    ["Sponsorships Team","Andrew Ashish","Parikshit Mishra"],
+    ["co-chairs","Umang","Madhura"],
+    ["Sponsorship Team","Andrew Ashish","Parikshit Mishra"],
     ["Research Team","Arpita Kulkarni","Sreecharan Challa"],
     ["Logistics and Transportation Team","Hemant Khatwani","Anush Baskaran"],
     ["Photography and Video Team","Anand Jain"],
