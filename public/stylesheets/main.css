@@ -33,7 +33,7 @@ a:focus{text-decoration:none;outline:none;color:#fff;}
 .logo-right{margin-bottom:15px;}
 .close-button{width:24px;height:24px;position:absolute;left:15px;top:30px;overflow:hidden;text-indent:10px;border:none;background:transparent;color:transparent;}
 .close-button::before,
-.close-button::after{content:'';position:absolute;width:3px;height:100%;top:0;left:50%;background:#bdc3c7;}
+.close-button::after{content:'';position:absolute;width:3px;height:100%;top:0;left:50%;background:black;}
 .close-button::before{-webkit-transform:rotate(45deg);transform:rotate(45deg);}
 .close-button::after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
 .close-button:hover:before,
@@ -41,10 +41,14 @@ a:focus{text-decoration:none;outline:none;color:#fff;}
 .navbar .navbar-header{padding:13px 0;}
 .menu-icon{background:transparent;border:none;margin-right:15px;}
 .menu-icon i{font-size:50px;color:black;}
-.menu-icon i:hover{color:#c6c6c6;}
+.menu-icon i:hover
+{
+    color: #grey;
+}
+
 @media (max-width:768px){body.toggled{position:fixed;}
 }
-.hero-area{background:url(../img/hero-area.jpg) no-repeat;background-size:cover;background-position:center bottom;color:#fff;overflow:hidden;}
+.hero-area{color:#fff;overflow:hidden;}
 .hero-area .sticky-navigation{background:transparent;}
 .hero-area{color:black;}
 .hero-area .contents h1{font-size:30px;font-weight:100;}

@@ -61,6 +61,8 @@ a {
 .card .card-content .card-title{
     font-size: 20px;
     line-height: normal;
+    height: 30px;
+    overflow: auto;
 }
 .card .card-action{
     padding-top: 10px;
@@ -165,7 +167,9 @@ a {
     padding: 15%;
 }
 section{
-    padding: 50px;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 section .section{
     padding: 50px;
@@ -233,5 +237,21 @@ section .section{
 }
 .card-action .container .row .col{
     padding-left: 5px;
+    padding-right: 5px;
+}
+.menu-icon {
+    background-color: transparent;
+}
+.card-content h6{
+    text-align: left;
+}
+.card-content h6 img{
+    padding-right: 5px;
+}
+#developers .image{
+    position: absolute;
+    left: 40%;
+}
+#developers .card-content{
     padding-right: 5px;
 }

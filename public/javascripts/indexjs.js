@@ -35,6 +35,8 @@ $(document).ready(function(){
         $('.card-reveal').closest('.card').css('overflow', 'hidden');
 
     });
+        $('.menu-icon').css('background-color','transparent');
+        $('.close-button').css('background-color','transparent');
     var a='';
     for(var i=0;i<teamleads.length;i++)
     {
@@ -94,4 +96,7 @@ $(document).ready(function(){
         h=1080;
     }
     c[0].setAttribute('height',h);
+    var h=$('#developers .card-image').height();
+    var hi=$('.image').height();
+    $('.image').css('top',h-(hi/2));
 });

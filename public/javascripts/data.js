@@ -34,4 +34,4 @@ var mentors=[
     ["Registration Team","Shubham Sagar","Sahiba Kaur"],
     ["Onstage Team","Ritwik Raje","Oindrila Banerjee"],
     ["Quality Assurance and Assistance Team","Harshitha Reddy Pulichintha"]
-]
+];
