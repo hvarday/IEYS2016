@@ -87,16 +87,17 @@ $(document).ready(function(){
     e=document.getElementById('mentors-card');
     e.innerHTML=a;
     var h=$(window).height();
-    console.log(h);
     var b=document.getElementsByClassName('background');
-    console.log(b[0].children);
     var c=b[0].children;
-    console.log(c[0]);
     if(h>1080){
         h=1080;
     }
     c[0].setAttribute('height',h);
     var h=$('#developers .card-image').height();
-    var hi=$('.image').height();
-    $('.image').css('top',h-(hi/2));
+    console.log(h);
+    var w=$('#developers .card-image').width();
+    w=w/2;
+    w=w-50;
+    $('.image').css('left',w);
+    $('.image').css('top',h-(100/2));
 });

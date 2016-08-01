@@ -250,8 +250,20 @@ section .section{
 }
 #developers .image{
     position: absolute;
-    left: 40%;
 }
 #developers .card-content{
     padding-right: 5px;
+}
+#speakers .card .card-title{
+    font-weight: 400;
+}
+.close{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: red;
+    opacity: 1;
+}
+.text{
+    text-align: right;
 }
