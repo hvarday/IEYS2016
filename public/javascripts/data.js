@@ -4,7 +4,7 @@
 var teamleads=[
     ["Chair","Kanishk Sanghi"],
     ["Co-Chair","Mythili H","Shivanand K"],
-    ["Sponsorship Team","Amogh Sharma","Avinash Parkala"],
+    ["Sponsorship Team","Avinash Parkala"],
     ["Research Team","Anna Shajee","Fazal Ahmad"],
     ["Logistics and Transportation Team","Anshit Saxena","Siddharth S Narayanan"],
     ["Photography and Video Team","Aseem Jain"],
