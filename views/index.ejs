@@ -40,12 +40,14 @@
     <script src="/bower/materialize/dist/js/materialize.js"></script>
     <script src="/javascripts/data.js"></script>
     <script src="/javascripts/indexjs.js"></script>
+    <script src="/bower/angular/angular.min.js"></script>
+    <script src="/javascripts/appcontroller.js"></script>
 
 
 
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="leadController">
 
 <div class="navbar navbar-invers menu-wrap z-depth-4">
     <div class="navbar-header text-center">
@@ -373,104 +375,45 @@
         <h3 class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms">Speakers</h3>
         <hr>
         <div class="container">
-
             <div class="row">
+                <div class="col s8 m6 l4 offset-s2 wow fadeInUp" ng-repeat="speaker in speakers" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class="card" ng-show="speaker.image!=''">
+                        <div class="card-image">
+                            <img src="{{speaker.image}}"/>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">{{speaker.name}}</h5>
+                        </div>
+                        <span class="activator"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">more_vert</i></a></span>
+                        <div class="card-action">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col s4 m4 l4">
+                                        <a href="#"><img src="/images/linkedin.svg"/></a>
+                                    </div>
+                                    <div class="col s4 m4 l4">
+                                        <a href="#"><img src="/images/facebook.svg"/></a>
+                                    </div>
+                                    <div class="col s4 m4 l4">
+                                        <a href="#"><img src="/images/twitter.svg"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <h5 class="card-title">{{speaker.name}}<i class=" close material-icons">close</i></h5>
+                            <p>{{speaker.description}}</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="col s8 m6 l4 offset-s2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/images/rj_naved.jpg"/>
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title">RJ Naved</h5>
-                        </div>
-                        <span class="activator"><a class="btn-floating waves-effect waves-light red"><i class="material-icons">more_vert</i></a></span>
-                        <div class="card-action">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/linkedin.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/facebook.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/twitter.svg"/></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-reveal">
-                            <h5 class="card-title">RJ Naved<i class=" close material-icons">close</i></h5>
-                            <p>RJ for radio mirchi<br>Voice behind Mirchi Murga</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s8 m6 l4 offset-s2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/images/benny.jpg"/>
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title">Dr. Benny Prasad</h5>
-                        </div>
-                        <span class="activator"><a class="btn-floating waves-effect waves-light red"><i class="material-icons">more_vert</i></a></span>
-                        <div class="card-action">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/linkedin.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/facebook.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/twitter.svg"/></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-reveal">
-                            <h5 class="card-title">Dr. Benny Prasad<i class="close material-icons">close</i></h5>
-                            <p>International Guitarist<br>Performed at FIFA 2006 and Olympics 2004</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s8 m6 l4 offset-s2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/images/abhijit.jpg"/>
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title">Abhijit Chakroborty</h5>
-                        </div>
-                        <span class="activator"><a class="btn-floating waves-effect waves-light red"><i class="material-icons">more_vert</i></a></span>
-                        <div class="card-action">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/linkedin.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/facebook.svg"/></a>
-                                    </div>
-                                    <div class="col s4 m4 l4">
-                                        <a href="#"><img src="/images/twitter.svg"/></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-reveal">
-                            <h5 class="card-title">Abhijit Chakroborty<i class=" close material-icons">close</i></h5>
-                            <p>Content Writer<br>Person behind the Anonymous Writer<br>Writes for the Logical Indian</p>
-                        </div>
-                    </div>
+
                 </div>
 
 
             </div>
-        </div>
-        <h5 class="right wow fadeInDown text" data-wow-duration="1000ms" data-wow-delay="400ms">Want to know who else is joining us?<br>Stay Tuned.</h5>
+
+
     </section>
 
 <section id="patrons">
@@ -555,7 +498,21 @@
         <hr>
         <div class="card-content">
             <div class="left">
-                <img class="img-circle img-responsive img-thumbnail" title="Kanishk Sanghi" src="/images/detective.svg" height="100px" width="100px">
+                <img class="img-circle img-responsive img-thumbnail" title="Kanishk Sanghi" src="https://res.cloudinary.com/dpxdj8xhr/image/upload/c_scale,q_60,w_300/v1470735857/kanishk_ldgbtw.jpg" height="100%" width="100%">
+            </div>
+            <div class="card-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodcumque in mentem incideret, et quodcumque tamquam occurreret. Idem adhuc; Quae contraria sunt his, malane? Quamquam tu hanc copiosiorem etiam soles dicere. Non quam nostram quidem, inquit Pomponius iocans; Quid est, quod ab ea absolvi et perfici debeat? Eaedem res maneant alio modo. Philosophi autem in suis lectulis plerumque moriuntur.
+
+                    Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. Nunc omni virtuti vitium contrario nomine opponitur. Mihi, inquam, qui te id ipsum rogavi? Quid de Platone aut de Democrito loquar? Sic consequentibus vestris sublatis prima tolluntur. Quae quidem sapientes sequuntur duce natura tamquam videntes;</p>
+            </div>
+        </div>
+    </div>
+    <div class="card z-depth-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+        <div class="card-header center"><h5>Avinash Parkala<br><small>IEYS-2016 Vice-Chair</small></h5></div>
+        <hr>
+        <div class="card-content">
+            <div class="right">
+                <img class="img-circle img-responsive img-thumbnail" title="Avinash Parkala" src="https://res.cloudinary.com/dpxdj8xhr/image/upload/c_scale,q_60,w_300/v1470735818/avinash_pxpjlo.jpg" height="100%" width="100%">
             </div>
             <div class="card-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodcumque in mentem incideret, et quodcumque tamquam occurreret. Idem adhuc; Quae contraria sunt his, malane? Quamquam tu hanc copiosiorem etiam soles dicere. Non quam nostram quidem, inquit Pomponius iocans; Quid est, quod ab ea absolvi et perfici debeat? Eaedem res maneant alio modo. Philosophi autem in suis lectulis plerumque moriuntur.
@@ -572,8 +529,20 @@
         <hr>
         <div class="container">
             <div class="row" id="team-leads">
-
+                <div ng-repeat="lead in teamleads" class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="card z-depth-1">
+                        <div class="card-image">
+                            <img src="{{lead.image}}"/>
+                            </div>
+                        <div class="card-content">
+                            <h5 class="card-title">{{lead.post}}</h5>
+                        </div>
+                        <div class="card-action">
+                            <p>{{lead.name}}</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
             </div>
 
@@ -584,7 +553,19 @@
     <hr>
     <div class="container">
         <div class="row" id="mentors-card">
-
+            <div class="col s10 m5 l4 offset-m1 offset-s1 wow fadeInUp" ng-repeat="mentor in mentors" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="card z-depth-1" ng-show="mentor.image!=''">
+                    <div class="card-image">
+                        <img src="{{mentor.image}}"/>
+                        </div>
+                    <div class="card-content">
+                        <h5 class="card-title">{{mentor.post}}</h5>
+                        </div>
+                    <div class="card-action">
+                        <p>{{mentor.name}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -644,7 +625,7 @@
         <div class="col s10 m6 l3 offset-s1 offset-l3 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
             <div class="card">
                 <div class="card-image"><img src="/images/customer-support.png" height="400px"></div>
-                <img class="image circle img-responsive img-thumbnail large" src="/images/tanisha.jpg" width="100px" height="100px">
+                <img class="image circle img-responsive img-thumbnail large" src="https://res.cloudinary.com/dpxdj8xhr/image/upload/v1470735916/tanisha_emq0j0.jpg" width="100px" height="100px">
                 <br><br>
                 <div class="card-content">
                     <h5>Tanisha Chawla<br><small>Web Designer</small></h5>
@@ -657,7 +638,7 @@
         <div class="col s10 m6 l3 offset-s1 offset-l1 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
             <div class="card">
                 <div class="card-image"><img src="/images/harshal.jpg" height="400px"></div>
-                <img class="image circle img-responsive img-thumbnail" src="/images/harshalpic.jpg" width="100px" height="100px">
+                <img class="image circle img-responsive img-thumbnail" src="https://res.cloudinary.com/dpxdj8xhr/image/upload/v1470735915/harshalpic_lpnpa4.jpg" width="100px" height="100px">
                 <br><br>
                 <div class="card-content">
                     <h5>Harshal Varday<br><small>Web Developer</small></h5>
